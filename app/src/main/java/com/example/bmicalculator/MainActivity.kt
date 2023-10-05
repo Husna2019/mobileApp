@@ -17,8 +17,7 @@ class MainActivity : AppCompatActivity() {
         val weightText=findViewById<EditText>(R.id.etWeight)
         val heightText=findViewById<EditText>(R.id.etHeight)
         val calButton=findViewById<Button>(R.id.btnCalculate)
-
-      /* calButton.setOnClickListener {
+        calButton.setOnClickListener {
             //input value into string
             val weight=weightText.text.toString()
             val height=heightText.text.toString()
@@ -86,10 +85,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
         resultDescription.setTextColor(ContextCompat.getColor(this,color))
-        resultDescription.text=resultText*/
-        calButton.setOnClickListener{
+        resultDescription.text=resultText
+       /* calButton.setOnClickListener{
             val intent = Intent(this,MainActivity2::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 }
